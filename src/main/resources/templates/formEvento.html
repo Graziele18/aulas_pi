@@ -6,8 +6,13 @@
 </head>
 <body>
 	<h1>Adicionar Evento</h1>
+	
+	<form action="/eventos/salvar">
+	
+	<div>
+	<p th:txt="$(mensagem)"></p>
+	</div>
 
-	<form action="">
 
 		<div>
 			<label>Nome:</label> <input type="text" name="nome">
@@ -25,5 +30,6 @@
 			<button type="submit">Salvar</button>
 			<button type="reset">Limpar</button>
 		</div>
+		</form>
 </body>
 </html>
