@@ -19,7 +19,7 @@ public class EventosController {
 
 	@RequestMapping("/eventos/form")
 	public String form() {
-		return "formEvento";
+		return "eventos/formEvento";
 	}
 
 	@RequestMapping("/eventos/submit")
@@ -30,7 +30,7 @@ public class EventosController {
 		System.out.println(evento.getData());
 		System.out.println(evento.getHorario());
 		er.save(evento);
-		return "ExecutandoSubmit";
+		return "eventos/ExecutandoSubmit";
 	}
 
 }
